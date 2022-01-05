@@ -10,26 +10,8 @@ Resimpy
 
 tags: ``Resimpy`` ``read simulation`` ``PCR amplification`` ``scRNA-seq`` ``bulkRNA-seq``
 
-Welcome to y's documentation!
+Welcome to Resimpy's documentation!
 =============================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   quick_start_guide
-   installation
-   tutorial/index
-   format/index
-   modules
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 Overview
 --------
@@ -50,6 +32,24 @@ timeconsuming experimental trials and other error-prone approaches.
 Simulated reads can have the UMI- barcode- primer-, or spacer-featured
 composition. Resimpy has been made avilable through the command-line
 interface (CLI) and Python-inline visits.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   quick_start_guide
+   installation
+   tutorial/index
+   format/index
+   modules
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
 Citation
 --------

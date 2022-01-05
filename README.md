@@ -1,5 +1,10 @@
 # Resimpy
-
+![](https://img.shields.io/badge/Resimpy-executable-519dd9.svg)
+![](https://img.shields.io/badge/last_released-Jan._2022-green.svg)
+![](https://img.shields.io/github/stars/cribbslab/resimpy?logo=GitHub&color=blue)
+![](https://img.shields.io/pypi/v/resimpyx?logo=PyPI)
+[![Documentation Status](https://readthedocs.org/projects/resimpy/badge/?version=latest)](https://resimpy.readthedocs.io/en/latest/?badge=latest)
+[![Downloads](https://pepy.tech/badge/mclumi)](https://pepy.tech/project/mclumi)
 
 ###### tags: `Resimpy` `read simulation` `PCR amplification` `scRNA-seq` `bulkRNA-seq`
 
