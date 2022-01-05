@@ -1,5 +1,5 @@
-resimpy
-=======
+Resimpy API
+===========
 
 .. toctree::
    :maxdepth: 4
