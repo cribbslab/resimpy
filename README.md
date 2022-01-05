@@ -1,7 +1,7 @@
 # Resimpy
 
 
-###### tags: `read simulation` `PCR amplification` `scRNA-seq` `bulkRNA-seq`
+###### tags: `Resimpy` `read simulation` `PCR amplification` `scRNA-seq` `bulkRNA-seq`
 
 
 ## Overview
@@ -13,10 +13,10 @@
 |_| \_\___||___/_|_| |_| |_| .__/ \__, |   |_|\___/ \___/|_|_|\_\_|\__|
                            |_|    |___/
 ```
-The REad SIMulation PYthon (Resimpy) program provides an scalable interface for users through Python to massively simulate and generate reads of varying sequencing technologies, in order to avoid timeconsuming experimental trials and other error-prone approaches. Simulated reads can have the UMI- barcode- primer-, spacer-featured composition. Resimpy has been made avilable through the command-line interface (CLI) and Python-inline visits. 
+The **RE**ad **SIM**ulation **PY**thon program (Resimpy) provides an scalable interface for users through Python to massively simulate and generate reads of varying sequencing technologies, in order to avoid timeconsuming experimental trials and other error-prone approaches. Simulated reads can have the UMI- barcode- primer-, or spacer-featured composition. Resimpy has been made avilable through the command-line interface (CLI) and Python-inline visits. 
 
 ## Citation
-Please cite our work if you use Resimpy in our research.
+Please cite our work if you use Resimpy in your research.
 
 ## Result reproducibility
 To reproduce the results used in xxx, please follow the instruction below.
