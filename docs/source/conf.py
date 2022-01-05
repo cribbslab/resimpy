@@ -16,6 +16,7 @@ MOCK_MODULES = [
     'numpy',
     'pandas',
     'rpy2',
+    'functools',
     'rpy2.robjects',
     'pyfastx',
     'scipy',
