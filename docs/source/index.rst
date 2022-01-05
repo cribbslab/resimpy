@@ -1,16 +1,16 @@
-.. resimpy documentation master file, created by
-   sphinx-quickstart on Wed Jan  5 01:46:51 2022.
+.. y documentation master file, created by
+   sphinx-quickstart on Wed Jan  5 02:29:07 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to resimpy's documentation!
-===================================
+Welcome to y's documentation!
+=============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   modules.rst
+   modules
 
 
 

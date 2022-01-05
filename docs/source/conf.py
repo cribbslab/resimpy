@@ -16,6 +16,7 @@ MOCK_MODULES = [
     'numpy',
     'pandas',
     'rpy2',
+    'rpy2.robjects',
     'pyfastx',
     'scipy',
     'pyfiglet',
@@ -32,7 +33,6 @@ class Mock(MagicMock):
 
 
 sys.modules.update((m, Mock()) for m in MOCK_MODULES)
-
 
 
 # -- General configuration ------------------------------------------------
