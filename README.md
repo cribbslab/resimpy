@@ -15,10 +15,10 @@
 ```
 The REad SIMulation PYthon (Resimpy) program provides an scalable interface for users through Python to massively simulate and generate reads of varying sequencing technologies, in order to avoid timeconsuming experimental trials and other error-prone approaches. Simulated reads can have the UMI- barcode- primer-, spacer-featured composition. Resimpy has been made avilable through the command-line interface (CLI) and Python-inline visits. 
 
-# Citation
+## Citation
 Please cite our work if you use Resimpy in our research.
 
-# Result reproducibility
+## Result reproducibility
 To reproduce the results used in xxx, please follow the instruction below.
 ```angular2html
 resimpy_general ...
