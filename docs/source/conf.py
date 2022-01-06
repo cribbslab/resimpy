@@ -50,13 +50,13 @@ sys.modules.update((m, Mock()) for m in MOCK_MODULES)
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    # 'sphinx.ext.autosummary',
+    'sphinx.ext.autosummary',
 
     # 'sphinx.ext.todo',
     # 'sphinx.ext.intersphinx',
     # 'sphinx.ext.coverage',
     # 'sphinx.ext.mathjax',
-    # 'sphinx.ext.viewcode',
+    'sphinx.ext.viewcode',
     # 'sphinx.ext.githubpages'
 ]
 napoleon_google_docstring = False
