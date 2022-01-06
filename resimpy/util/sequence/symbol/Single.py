@@ -3,9 +3,6 @@ __copyright__ = "Copyright 2022"
 __license__ = "MIT"
 __author__ = "Adam Cribbs lab"
 
-import sys
-sys.path.append('../../../../../')
-
 
 class single(object):
 

@@ -3,11 +3,7 @@ __copyright__ = "Copyright 2022"
 __license__ = "MIT"
 __lab__ = "Adam Cribbs lab"
 
-import os, sys
-dis = '../../../'
-sys.path.append(os.path.abspath(dis))
 import time
-# from numba import jit
 from resimpy.util.sequence.fasta.Read import read as sfasta
 from resimpy.util.random.Sampling import sampling as ranspl
 from resimpy.util.random.Number import number as rannum
@@ -99,10 +95,10 @@ class cdna(object):
 
 
 if __name__ == "__main__":
-    offset = '../' * 5 + dis
+
     DEFINE = {
-        'cand_pool_fpn': offset + 'data/omics/genomics/fasta/cdna/GRCh38/cdna_n.txt',
-        'cdna_fp': offset + 'data/omics/genomics/fasta/cdna/GRCh38/',
+        'cand_pool_fpn':  'data/omics/genomics/fasta/cdna/GRCh38/cdna_n.txt',
+        'cdna_fp':  'data/omics/genomics/fasta/cdna/GRCh38/',
     }
     # print(DEFINE['cand_pool_fpn'])
     p = cdna(

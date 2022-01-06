@@ -4,10 +4,7 @@ __license__ = "MIT"
 __lab__ = "Adam Cribbs lab"
 
 import time
-import os, sys
 import numpy as np
-dis = '../../../'
-sys.path.append(os.path.abspath(dis))
 from resimpy.util.random.Sampling import sampling as ranspl
 from resimpy.util.random.Number import number as rannum
 from resimpy.util.file.read.Reader import reader as pfreader
@@ -121,7 +118,6 @@ class general(object):
 
 
 if __name__ == "__main__":
-    from resimpy.Path import to
     DEFINE = {
         '': '',
     }

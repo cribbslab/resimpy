@@ -8,6 +8,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
+# sys.path.insert(0, os.path.abspath('D:/Document/Programming/Python/deepbio/symphony/github/resimpy/'))
 
 # external dependent libraries have to be mocked. Otherwise RTD does not work
 # https://docs.python.org/3/library/unittest.mock.html
@@ -16,12 +17,13 @@ MOCK_MODULES = [
     'numpy',
     'pandas',
     'rpy2',
-    'functools',
-    'rpy2.robjects',
+    'Bio',
+    # 'rpy2.robjects',
     'pyfastx',
     'scipy',
     'pyfiglet',
 ]
+
 
 from unittest.mock import MagicMock
 
@@ -48,7 +50,7 @@ sys.modules.update((m, Mock()) for m in MOCK_MODULES)
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    'sphinx.ext.autosummary',
+    # 'sphinx.ext.autosummary',
 
     # 'sphinx.ext.todo',
     # 'sphinx.ext.intersphinx',

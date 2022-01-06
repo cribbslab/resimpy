@@ -3,10 +3,6 @@ __copyright__ = "Copyright 2022"
 __license__ = "MIT"
 __lab__ = "Adam Cribbs lab"
 
-import os, sys
-dis = os.path.abspath("../../../../")
-print(dis)
-sys.path.append(dis)
 from Bio import SeqIO
 from resimpy.read import library as liblogginger
 
@@ -41,9 +37,7 @@ class read(object):
 
 if __name__ == "__main__":
     p = read()
-    offset = '../' * 7
-    print(offset)
     print(p.get(
-        fasta_path=offset + 'data/omics/genomics/fasta/cdna/GRCh38/',
+        fasta_path= 'data/omics/genomics/fasta/cdna/GRCh38/',
         fasta_name='ENST00000379435.3',
     ))

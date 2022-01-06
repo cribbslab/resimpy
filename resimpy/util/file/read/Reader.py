@@ -3,9 +3,6 @@ __copyright__ = "Copyright 2022"
 __license__ = "MIT"
 __lab__ = "Adam Cribbs lab"
 
-import os
-import sys
-sys.path.append(os.path.abspath('../../../'))
 import pandas as pd
 from functools import wraps
 

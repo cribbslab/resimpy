@@ -109,7 +109,6 @@ class umiDouble(object):
 
 
 if __name__ == "__main__":
-    from resimpy.Path import to
     DEFINE = {
         '': '',
     }

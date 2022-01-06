@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="resimpyx",
-    version="0.0.1",
-    # name="resimpy",
-    # version="0.0.0.0.15",
+    # name="resimpyx",
+    # version="0.0.1",
+    name="resimpy",
+    version="0.0.0.0.15",
     keywords=("pip", "resimpy"),
     description="REad SIMulation PY",
     long_description="sequencing read simulation python interface",

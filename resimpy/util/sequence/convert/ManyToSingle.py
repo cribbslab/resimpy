@@ -4,8 +4,6 @@ __license__ = "MIT"
 __author__ = "Adam Cribbs lab"
 
 import re
-import sys
-sys.path.append('../../../../')
 from Bio import SeqIO
 from resimpy.util.file.write.Writer import writer as pfwriter
 from resimpy.Path import to

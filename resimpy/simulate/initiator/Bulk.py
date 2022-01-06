@@ -6,15 +6,15 @@ __lab__ = "Adam Cribbs lab"
 import time
 import numpy as np
 from scipy.sparse import coo_matrix
+from resimpy.read.barcode.Design import design as dbc
+from resimpy.read.umi.Design import design as dumi
+from resimpy.read.seq.Design import design as dseq
+from resimpy.read.similarity.distance.Hamming import hamming
 from resimpy.util.random.Sampling import sampling as ranspl
 from resimpy.util.random.Number import number as rannum
 from resimpy.util.file.read.Reader import reader as pfreader
 from resimpy.util.file.create.Folder import folder as crtfolder
 from resimpy.util.sequence.symbol.Single import single as dnasgl
-from resimpy.read.barcode.Design import design as dbc
-from resimpy.read.umi.Design import design as dumi
-from resimpy.read.seq.Design import design as dseq
-from resimpy.read.similarity.distance.Hamming import hamming
 
 
 class bulk(object):
