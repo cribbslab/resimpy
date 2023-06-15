@@ -1,5 +1,6 @@
 # ingore data folder
 data/
+permute*/
 resimpy/simulate/dispatcher/batch/Bulk.py
 resimpy/simulate/dispatcher/batch/CDNA.py.py
 resimpy/simulate/dispatcher/batch/SingleCell.py

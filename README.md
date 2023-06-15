@@ -24,11 +24,20 @@ The **RE**ad **SIM**ulation **PY**thon program (Resimpy) provides an scalable in
 Please cite our work if you use Resimpy in your research.
 
 ## Result reproducibility
-To reproduce the results used in xxx, please follow the instruction below.
+To reproduce the results used in https://www.biorxiv.org/content/10.1101/2023.04.06.535911v1, please follow the instruction below.
+
 ```angular2html
-resimpy_general ...
-resimpy_umi_sc ...
-resimpy_umi_transloc ...
+# resimpy_general pcr_errs
+resimpy_general -r pcr_errs -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_errs 1e-3;1e-2;0.1 -out_dir ./
+
+# resimpy_general ampl_rates 
+resimpy_general -r ampl_rates -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -ampl_rates 0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1.0 -out_dir ./
+
+# resimpy_general pcr_nums
+resimpy_general -r pcr_nums -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_nums 6;7;8;9;10;11;12;13;14 -out_dir ./
+
+# resimpy_general umi_lens
+resimpy_general -r umi_lens -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -umi_lens 6;7;8;9;10;11;12 -out_dir ./
 ```
 
 ## Documentation
@@ -37,7 +46,8 @@ The Resimpy documentation showing its usage in different situations are availabl
 ## Installation
 Released via https://pypi.org/project/resimpyx/
 ```angular2html
-pip install --upgrade resimpyx
+# install a stable version
+pip install resimpyx==0.0.2
 ```
 
 ## Overview
@@ -135,21 +145,8 @@ resimpy_general \
 -out_dir ./
 ```
 
-```
-# resimpy_general pcr_errs
-resimpy_general -r pcr_errs -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_errs 1e-3;1e-2;0.1 -out_dir ./
-
-# resimpy_general ampl_rates 
-resimpy_general -r ampl_rates -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -ampl_rates 0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1.0 -out_dir ./
-
-# resimpy_general pcr_nums
-resimpy_general -r pcr_nums -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_nums 6;7;8;9;10;11;12;13;14 -out_dir ./
-
-# resimpy_general umi_lens
-resimpy_general -r umi_lens -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -umi_lens 6;7;8;9;10;11;12 -out_dir ./
-```
-
 ## Contact
+Developer: Jianfeng Sun, Cribbslab
 
 Homepage: https://www.ndorms.ox.ac.uk/team/adam-cribbs  
 
