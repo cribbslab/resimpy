@@ -23,7 +23,53 @@ The **RE**ad **SIM**ulation **PY**thon program (Resimpy) provides an scalable in
 ## Citation
 Please cite our work if you use Resimpy in your research.
 
-## Result reproducibility
+## Documentation
+The Resimpy documentation showing its usage in different situations are available at https://resimpy.readthedocs.io/en/latest/index.html.
+
+## Installation
+There are two ways provided for installing the ResimPy package. We have tested the package installation with Python 3.9.1. It is in principle that ResimPy can be installed on an environment with the Python version of >3.6 but <3.10.
+
+1. Released via PyPI
+
+    * step 1: create a conda environment, e.g., resimpy
+
+        ```angular2html
+        conda create --name resimpy python=3.9.1
+        
+        conda activate resimpy
+        ```
+
+    * step 2: sourced from https://pypi.org/project/resimpyx.
+        ```angular2html
+        pip install resimpyx==0.0.2
+        ```
+
+2. Released via an up-to-date GitHub package
+
+    * step 1: create a conda environment
+
+        ```angular2html
+        conda create --name resimpy python=3.9.1
+        
+        conda activate resimpy
+        ```
+
+    * step 2: sourced from GitHub
+        ```angular2html
+        mkdir project
+        
+        cd project/
+        
+        git clone https://github.com/cribbslab/resimpy
+        
+        cd resimpy
+        
+        python setup.py install
+        ```
+        
+You are supposed to be all set after going through either one step above. Now you can move on to testing the package and we post a few example commands below for you to reproduce the simulation results used in our paper https://www.biorxiv.org/content/10.1101/2023.04.06.535911v1. To do so, a single command with parameters is used. The vignette in **Overview** helps you understand what each parameter represents. You can also refer to https://resimpy.readthedocs.io/en/latest/tutorial/index.html for parameter illustration. Please note that anything you are meant to do should be done within the conda environment resimpy as created above.
+
+## Usage and simulation result reproducibility
 To reproduce the results used in https://www.biorxiv.org/content/10.1101/2023.04.06.535911v1, please follow the instruction below.
 
 ```angular2html
@@ -40,15 +86,6 @@ resimpy_general -r pcr_nums -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 
 resimpy_general -r umi_lens -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -umi_lens 6;7;8;9;10;11;12 -out_dir ./
 ```
 
-## Documentation
-The Resimpy documentation showing its usage in different situations are available at https://resimpy.readthedocs.io/en/latest/index.html.
-
-## Installation
-Released via https://pypi.org/project/resimpyx/
-```angular2html
-# install a stable version
-pip install resimpyx==0.0.2
-```
 
 ## Overview
 ```angular2html
@@ -121,28 +158,6 @@ optional arguments:
                         errors
   --out_directory out_directory, -out_dir out_directory
                         output directory
-```
-
-## Usage
-### resimpy_general
-#### Example 1: sequencing errors
-```shell
-resimpy_general \
--r seq_errs \
--rs umi+seq \
--perm_num 3 \
--umiup 1 \
--umiul 10 \
--umi_num 50 \
--seq_len 20 \
--pcr_num 8 \
--pcr_err 0.0001 \
--seq_err 0.0001 \
--ampl_rate 0.85 \
--sim_thres 3 \
--spl_rate 1 \
--seq_errs 1e-3;1e-2;0.1 \
--out_dir ./
 ```
 
 ## Contact
