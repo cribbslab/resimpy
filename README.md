@@ -1,10 +1,3 @@
-<style>
-  code {
-    white-space : pre-wrap !important;
-    word-break: break-word;
-  }
-</style>
-
 # Resimpy
 ![](https://img.shields.io/badge/Resimpy-executable-519dd9.svg)
 ![](https://img.shields.io/badge/last_released-Jan._2022-green.svg)
@@ -194,4 +187,3 @@ Please cite our work if you use ResimPy in your research.
 Developer: Jianfeng Sun, Cribbslab
 
 Homepage: https://www.ndorms.ox.ac.uk/team/adam-cribbs  
-
