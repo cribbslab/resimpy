@@ -89,7 +89,7 @@ resimpy_general -r pcr_nums -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 
 ```
 
 Situation 4. test the impact of UMIs of different lengths on quantification accuracy using ResimPy by varying the umi_lens parameter while keeping other parameters by default.
-```angular2html!
+```shell
 # umi_lens
 resimpy_general -r umi_lens -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -umi_lens 6;7;8;9;10;11;12 -out_dir ./
 ```
