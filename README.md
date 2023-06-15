@@ -21,10 +21,10 @@
 The **RE**ad **SIM**ulation **PY**thon program (ResimPy) provides an scalable interface for users via Python to simulate massive reads of varying sequencing technologies, in order to avoid the time-consuming nature of experimental trials. Simulated reads can have the UMI- barcode- primer-, or spacer-featured composition. ResimPy has been made avilable through the command-line interface (CLI) and Python-inline visits.
 
 ## Documentation
-The Resimpy documentation showing the ResimPy usage in different situations is available at https://resimpy.readthedocs.io/en/latest/index.html.
+The Resimpy documentation is shown either along this README file below or https://resimpy.readthedocs.io/en/latest/index.html.
 
 ## Installation
-There are two ways provided for installing the ResimPy package. We have tested the package installation with Python 3.9.1. It is in principle that ResimPy can be installed on an environment with the Python version of >3.6 but <3.10.
+There are two ways provided for installing the ResimPy package. It is in principle that ResimPy can be installed on an environment with the Python version of >3.6 but <3.10. We highly recommend installing the package  with Python 3.9.1. Other versions of Python above 3.9.1 will possibly cause conflicts between dependencies, such as NumPy will need a Cython compiler. 
 
 1. Released via PyPI
 
