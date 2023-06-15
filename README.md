@@ -6,7 +6,7 @@
 [![Documentation Status](https://readthedocs.org/projects/resimpy/badge/?version=latest)](https://resimpy.readthedocs.io/en/latest/?badge=latest)
 [![Downloads](https://pepy.tech/badge/mclumi)](https://pepy.tech/project/mclumi)
 
-###### tags: `Resimpy` `read simulation` `PCR amplification` `scRNA-seq` `bulkRNA-seq`
+###### tags: `ResimPy` `read simulation` `PCR amplification` `scRNA-seq` `bulkRNA-seq`
 
 
 ## Overview
@@ -18,13 +18,13 @@
 |_| \_\___||___/_|_| |_| |_| .__/ \__, |   |_|\___/ \___/|_|_|\_\_|\__|
                            |_|    |___/
 ```
-The **RE**ad **SIM**ulation **PY**thon program (Resimpy) provides an scalable interface for users through Python to massively simulate and generate reads of varying sequencing technologies, in order to avoid timeconsuming experimental trials and other error-prone approaches. Simulated reads can have the UMI- barcode- primer-, or spacer-featured composition. Resimpy has been made avilable through the command-line interface (CLI) and Python-inline visits. 
+The **RE**ad **SIM**ulation **PY**thon program (ResimPy) provides an scalable interface for users via Python to simulate massive reads of varying sequencing technologies, in order to avoid the time-consuming nature of experimental trials. Simulated reads can have the UMI- barcode- primer-, or spacer-featured composition. ResimPy has been made avilable through the command-line interface (CLI) and Python-inline visits. 
 
 ## Citation
-Please cite our work if you use Resimpy in your research.
+Please cite our work if you use ResimPy in your research.
 
 ## Documentation
-The Resimpy documentation showing its usage in different situations are available at https://resimpy.readthedocs.io/en/latest/index.html.
+The Resimpy documentation showing the ResimPy usage in different situations is available at https://resimpy.readthedocs.io/en/latest/index.html.
 
 ## Installation
 There are two ways provided for installing the ResimPy package. We have tested the package installation with Python 3.9.1. It is in principle that ResimPy can be installed on an environment with the Python version of >3.6 but <3.10.
@@ -72,20 +72,29 @@ You are supposed to be all set after going through either one step above. Now yo
 ## Usage and simulation result reproducibility
 To reproduce the results used in https://www.biorxiv.org/content/10.1101/2023.04.06.535911v1, please follow the instruction below.
 
+Situation 1. test the impact of differnt PCR error rates on quantification accuracy using ResimPy by varying the pcr_errs parameter while keeping other parameters by default.
 ```angular2html
-# resimpy_general pcr_errs
 resimpy_general -r pcr_errs -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_errs 1e-3;1e-2;0.1 -out_dir ./
+```
 
-# resimpy_general ampl_rates 
+Situation 2. test the impact of differnt PCR amplification rates on quantification accuracy using ResimPy by varying the ampl_rates parameter while keeping other parameters by default.
+```angular2html
 resimpy_general -r ampl_rates -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -ampl_rates 0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1.0 -out_dir ./
+```
 
-# resimpy_general pcr_nums
+Situation 3. test the impact of differnt PCR cycles on quantification accuracy using ResimPy by varying the pcr_nums parameter while keeping other parameters by default.
+```angular2html
+# pcr_nums
 resimpy_general -r pcr_nums -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -pcr_nums 6;7;8;9;10;11;12;13;14 -out_dir ./
+```
 
-# resimpy_general umi_lens
+Situation 4. test the impact of UMIs of different lengths on quantification accuracy using ResimPy by varying the umi_lens parameter while keeping other parameters by default.
+```angular2html
+# umi_lens
 resimpy_general -r umi_lens -rs umi+seq -perm_num 3 -umiup 1 -umiul 10 -umi_num 50 -seq_len 20 -pcr_num 8 -pcr_err 0.0001 -seq_err 0.0001 -ampl_rate 0.85 -sim_thres 3 -spl_rate 1 -umi_lens 6;7;8;9;10;11;12 -out_dir ./
 ```
 
+In fact, users are allowed to test more situations (e.g., sequencing error) beyond what is shown above by simply varying one parameter while keeping the rest of the parameters by default.
 
 ## Overview
 ```angular2html
